@@ -1,0 +1,284 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <style>
+        img { display: block; margin: 0px auto; }
+    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Layer 4 - GodStresser</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="/static/assets/images/icon/favicon.ico">
+    <link rel="stylesheet" href="/static/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/assets/css/themify-icons.css">
+    <link rel="stylesheet" href="/static/assets/css/metisMenu.css">
+    <link rel="stylesheet" href="/static/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/static/assets/css/slicknav.min.css">
+    <!-- amchart css -->
+    <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+    <!-- others css -->
+    <link rel="stylesheet" href="/static/assets/css/typography.css">
+    <link rel="stylesheet" href="/static/assets/css/default-css.css">
+    <link rel="stylesheet" href="/static/assets/css/styles.css">
+    <link rel="stylesheet" href="/static/assets/css/responsive.css">
+    <!-- modernizr css -->
+    <script src="/static/assets/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <!-- preloader area start -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- preloader area end -->
+    <!-- page container area start -->
+    <div class="page-container">
+        <!-- sidebar menu area start -->
+        <div class="sidebar-menu">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <a href="dashboard">
+                        <img src="/static/assets/images/icon/logo.png" alt="logo">
+                    </a>
+                </div>
+            </div>
+            <div class="main-menu">
+                <div class="menu-inner">
+                    <nav>
+                        <ul class="metismenu" id="menu">
+                            <li><a href="dashboard"><i class="ti-dashboard"></i><span>Dashboard</span></a></li>
+                            <li>
+                                <a href="javascript:void(0)" aria-expanded="true"><i class="ti-notepad"></i><span>Services</span></a>
+                                <ul class="collapse">
+                                    <li><a href="layer4">Layer 4 Stress</a></li>
+                                    <li><a href="layer7">Layer 7 Stress</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" aria-expanded="true"><i class="ti-rocket"></i><span>API</span></a>
+                                <ul class="collapse">
+                                    <li><a href="api">API Manager</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" aria-expanded="true"><i class="ti-shopping-cart"></i><span>Purchase</span></a>
+                                <ul class="collapse">
+                                    <li><a href="plans">Plans</a></li>
+                                    <li><a href="redeem">Redeem</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" aria-expanded="true"><i class="ti-help-alt"></i><span>Contact</span></a>
+                                <ul class="collapse">
+                                    <li><a href="contact">Telegram</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- sidebar menu area end -->
+        <!-- main content area start -->
+        <div class="main-content">
+            <!-- header area start -->
+            <div class="header-area">
+                <div class="row align-items-center">
+                    <!-- nav and search button -->
+                    <div class="col-md-6 col-sm-8 clearfix">
+                        <div class="nav-btn pull-left">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <!-- profile info & task notification -->
+                    <div class="col-md-6 col-sm-4 clearfix">
+                        <ul class="notification-area pull-right">
+                            <li id="full-view"><i class="ti-fullscreen"></i></li>
+                            <li id="full-view-exit"><i class="ti-zoom-out"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- header area end -->
+            <!-- page title area start -->
+            <div class="page-title-area">
+                <div class="row align-items-center">
+                    <div class="col-sm-6">
+                        <div class="breadcrumbs-area clearfix">
+                            <h4 class="page-title pull-left">Service</h4>
+                            <ul class="breadcrumbs pull-left">
+                                <li><a href="dashboard">Home</a></li>
+                                <li><span>Layer 4 Stress</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 clearfix">
+                        <div class="user-profile pull-right">
+                            <h4 class="user-name dropdown-toggle" data-toggle="dropdown">{{username}} <i class="fa fa-angle-down"></i></h4>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="logout">Log Out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- page title area end -->
+            <div class="main-content-inner">
+            	<form method="POST">
+            		<div class="row">
+	                    <div class="col-lg-6 col-ml-12">
+	                        <div class="row">
+	                            <!-- Textual inputs start -->
+	                            <div class="col-12 mt-5">
+	                                <div class="card">
+	                                    <div class="card-body">
+	                                        <h4 class="header-title">Layer 4 Stress</h4>
+						                    <label for="targetUrl" class="col-form-label">Method</label>
+                                            <select name="attackType2" select class="form-control", style="vertical-align: middle" size="1">
+                                                <option value="udp">UDP</option>
+                                                <option value="tcp">TCP</option>
+                                                <option value="ldap">LDAP</option>
+                                                <option value="ntp">NTP</option>
+                                                <option value="ovh">OVH</option>
+                                            </select>
+	                                        <div class="mb-3"></div>
+	                                        <div class="form-group">
+	                                            <label for="targetIp" class="col-form-label">Host</label>
+	                                            <input class="form-control" name="Host" placeholder="1.1.1.1" type="text" id="targetIp" required> 
+	                                        </div>
+                                            <div class="form-group">
+	                                            <label for="targetPort" class="col-form-label">Port</label>
+	                                            <input class="form-control" name="Port" placeholder="80" type="text" id="targetPort" required> 
+	                                        </div>
+                                        	<div class="form-group">
+	                                            <label for="duration" class="col-form-label">Attack Duration (Second)</label>
+	                                            <input class="form-control" name="duration" placeholder="300" type="number" id="duration" required>
+                                        	</div>
+	                                        <button type="submit" class="btn btn-primary mt-4 pr-4 pl-4">Start</button>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                    <div class="col-6 mt-5">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="header-title">Attack Log</h4>
+                                    <div class="data-tables datatable-dark">
+                                        <table id="dataTable3" class="text-center">
+                                            <thead class="text-capitalize">
+                                                <tr>
+                                                    <th>Method</th>
+                                                    <th>Host</th>
+                                                    <th>Port</th>
+                                                    <th>Time</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+	                </div>
+            	</form>
+            </div>
+        </div>
+        <!-- main content area end -->
+        <!-- footer area start-->
+        <footer>
+            <div class="footer-area">
+                <p>© Copyright 2022 GodStresser</p>
+            </div>
+        </footer>
+        <!-- footer area end-->
+    </div>
+    <!-- offset area end -->
+
+    <!-- jquery latest version -->
+    <script src="/static/assets/js/vendor/jquery-2.2.4.min.js"></script>
+    <!-- bootstrap 4 js -->
+    <script src="/static/assets/js/popper.min.js"></script>
+    <script src="/static/assets/js/bootstrap.min.js"></script>
+    <script src="/static/assets/js/owl.carousel.min.js"></script>
+    <script src="/static/assets/js/metisMenu.min.js"></script>
+    <script src="/static/assets/js/jquery.slimscroll.min.js"></script>
+    <script src="/static/assets/js/jquery.slicknav.min.js"></script>
+
+    <!-- others plugins -->
+    <script src="/static/assets/js/plugins.js"></script>
+    <script src="/static/assets/js/scripts.js"></script>
+</body>
+
+</html>
+<?php
+ini_set('display_errors', '0');
+
+$id = $_POST["userid"];
+$pw = $_POST["userpw"];
+
+
+$Type = $_POST["attackType2"];
+$url = $_POST["target"];
+$time = $_POST["duration"];
+
+$API_SERVER = "";
+
+if ($url == null){
+exit;
+} else {
+echo $url ."에 대한 공격이 시작 되었습니다.";
+echo "Type=".$Type."&URL=".$url."&time=".$time;
+post($API_SERVER,"Type=".$Type."&URL=".$url."&time=".$time);
+}
+
+
+function post($url, $fields)
+{
+    $post_field_string = http_build_query($fields, '', '&');
+    $ch = curl_init();                                                            // curl 초기화
+    curl_setopt($ch, CURLOPT_URL, $url);                                 // url 지정하기
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, false);              // 요청결과를 문자열로 반환
+    curl_setopt($ch, CURLOPT_TIMEOUT, 1);               // connection timeout : 10초
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $fields);      // POST DATA
+    $response = curl_exec($ch);
+    curl_close ($ch);
+    return "ok";
+
+}
+
+
+
+function fileread($fn)
+{
+	$z = fopen($fn, 'r');
+	$res_ = fread($z, filesize($fn));
+	fclose($z);
+	return $res_;
+}
+
+function Encrypt($str, $secret_key='secret key', $secret_iv='secret iv')
+{
+$key = hash('sha256', $secret_key);
+$iv = substr(hash('sha256', $secret_iv), 0, 32) ;
+return str_replace("=", "", base64_encode
+( openssl_encrypt($str, "AES-256-CBC", $key, 0, $iv))
+);
+}
+
+function Decrypt($str, $secret_key='secret key', $secret_iv='secret iv')
+{
+$key = hash('sha256', $secret_key);
+$iv = substr(hash('sha256', $secret_iv), 0, 32);
+return openssl_decrypt( base64_decode($str), "AES-256-CBC", $key, 0, $iv
+);
+}
+?>

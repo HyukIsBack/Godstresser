@@ -1,0 +1,136 @@
+.login-dark {
+  height: auto;
+  /*background-color: #475d62;*/
+  /*background-size: cover;*/
+  /*position: relative;*/
+}
+
+.login-dark form {
+  backdrop-filter: blur(0.3em);
+  -webkit-backdrop-filter: blur(0.3em);
+  max-width: 400px;
+  width: 400%;
+  background-color: #2727278f;
+  content: "";
+  padding: 40px;
+  border-radius: 4px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.login-dark .illustration {
+  text-align: center;
+  padding: 15px 0 20px;
+  font-size: 100px;
+  color: #5F5F5F;
+}
+
+.login-dark form .form-control {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #FFFFFF;
+  border-radius: 0;
+  box-shadow: none;
+  outline: none;
+  color: inherit;
+}
+
+.login-dark form .btn-primary {
+  background: #0084ff;
+  border: none;
+  border-radius: 4px;
+  padding: 11px;
+  box-shadow: none;
+  margin-top: 26px;
+  text-shadow: none;
+  outline: none;
+}
+
+.login-dark form .btn-primary:hover, .login-dark form .btn-primary:active {
+  background: #00c5ff;
+  outline: none;
+}
+
+.login-dark form .forgot {
+  font-family: 'Jeju Gothic', sans-serif;
+  font-weight: 100;
+  display: block;
+  text-align: left;
+  font-size: 19px;
+  color: #0084ff;
+  opacity: 1.0;
+  text-decoration: none;
+}
+
+.login-dark form .forgot:hover, .login-dark form .forgot:active {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.login-dark form .btn-primary:active {
+  transform: translateY(1px);
+}
+
+body {
+  background-color: #5F5F5F;
+}
+
+h2 {
+  font-family: 'Jeju Gothic', sans-serif;
+  font-weight: 100;
+  font-size: 40px;
+  color: #FFFFFF;
+}
+
+p {
+  font-family: 'Jeju Gothic', sans-serif;
+  font-weight: 100;
+  display: block;
+  text-align: left;
+  font-size: 19px;
+  color: #0084ff;
+  opacity: 1.0;
+  text-decoration: none;
+
+  font-family: 'Jeju Gothic', sans-serif;
+  font-weight: 100;
+  color: #fff;
+}
+
+div {
+  font-family: 'Jeju Gothic', sans-serif;
+  font-weight: 100;
+  color: #FFFFFF;
+}
+
+href {
+  font-family: 'Jeju Gothic', sans-serif;
+  font-weight: 100;
+  color: #FFFFFF;
+}
+
+#id {
+  font-family: 'Jeju Gothic', sans-serif;
+  font-weight: 300;
+  color: #FFFFFF;
+}
+
+#pw {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  color: #FFFFFF;
+}
+
+#login {
+  font-family: 'Jeju Gothic', sans-serif;
+  font-weight: 100;
+  color: #FFFFFF;
+}
+
+
+a {
+  font-family: 'Jeju Gothic', sans-serif;
+  font-weight: 100;
+}
