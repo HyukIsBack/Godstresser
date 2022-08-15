@@ -11,7 +11,7 @@ import dbdb
 import pymysql, time, ssl
 
 app = Flask(__name__)
-app.config["SECRET_KEY"] = b'x.Q(ryIidfc8f&kG#n`eU@UK4WsuG6v3oI$Gc/7^wX%=9RssZv"=iO1#R_&em{^'
+app.config["SECRET_KEY"] = b'YOUR_SECRET_KEY'
 app.config["PERMANENT_SESSION_LIFETIME"] = datetime.timedelta(minutes=15)
 
 HTML_PATH_LOGIN = './sign/login.html'
@@ -26,26 +26,10 @@ HTML_PATH_PLANS = './purchase/plans.html'
 HTML_PATH_REDEEM = './purchase/redeem.html'
 HTML_PATH_API = './api/api.html'
 
-LINK_TELEGRAM = 'https://t.me/godstresser/'
+LINK_TELEGRAM = ''
 
 SERVER = {
-    'SERVER_1': ['198.148.122.145', 'O6m37tIVx3pn3S4OrU', '0'],
-    'SERVER_2': ['107.174.172.18', '7YlxOGd64A7q4Pcb7R', '0'],
-    'SERVER_3': ['107.174.115.139', 'Weoopv410E4FS2a7BC', '0'],
-    'SERVER_4': ["198.52.100.198", "VQid0Mj982yEK2lB4e", '0'],
-    'SERVER_5': ["107.174.181.138", "H6M9j0su2RM0fcKWd8", '0'],
-    'SERVER_6': ["23.94.200.34", "bMLc62s0VYxJe2cX07", '0'],
-    'SERVER_7': ["192.210.228.203", "srj4Of6N351AQvM7Cc", '0'],
-    'SERVER_8': ["23.94.0.90", "3Yk4pF4mcQM1oUhL19", '0'],
-    'SERVER_9': ["173.82.26.33", "Ux38Ew8dVr86KgY5Ss", '0'],
-    'SERVER_10': ["216.127.187.70", "To4Ux76i2S5P7HOidq", '0'],
-    'SERVER_11': ["107.174.176.169", "x3Wj4cJf86fL8rCXS2", '0'],
-    'SERVER_12': ["23.94.91.169", "oj5z3BuTJa181aTC0V", '0'],
-    'SERVER_13': ["96.45.160.142", "Kg2Jhq85ESt1Km36Jy", '0'],
-    'SERVER_14': ["107.174.93.71", "iH0x160tQnSHLy2X6z", '0'],
-    'SERVER_15': ["173.82.26.34", "AQmO2wI8Y9rrPab131", '0'],
-    'SERVER_16': ["107.174.115.14", "EaV097uLjPw9J3hM1s", '0'],
-    'SERVER_17': ["107.173.15.121", "8q6ha3w7BPWy2LmQ9K", '0']
+    'SERVER_1': ['SERVER_IP', 'SERVER_PW', '0'],
 }
 
 MAX_SERVER = len(SERVER)
@@ -90,8 +74,8 @@ def runAttack(method, target, runTime):
 def db_connector(sql_command):
     MYSQL_DB = {
         'user'     : 'root',
-        'password' : 'Tmdgur12!',
-        'host'     : 'localhost',
+        'password' : '',
+        'host'     : '',
         'port'     : '3306',
         'database' : 'panel'
     }
