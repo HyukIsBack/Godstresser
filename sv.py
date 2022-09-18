@@ -301,23 +301,23 @@ def api():
 
 @app.route('/plans/bronze', methods=['GET'])
 def bronze():
-    return redirect('https://godstresser.sellix.io/product/6298bd466fe48')
+    return redirect('')
 
 @app.route('/plans/silver', methods=['GET'])
 def silver():
-    return redirect('https://godstresser.sellix.io/product/6298bdee63cf2')
+    return redirect('')
 
 @app.route('/plans/gold', methods=['GET'])
 def gold():
-    return redirect('https://godstresser.sellix.io/product/6298be690f4e7')
+    return redirect('')
 
 @app.route('/plans/diamond', methods=['GET'])
 def diamond():
-    return redirect('https://godstresser.sellix.io/product/6298bf3bdcb48')
+    return redirect('')
 
 @app.route('/plans/master', methods=['GET'])
 def master():
-    return redirect('https://godstresser.sellix.io/product/6298c0088f06c')
+    return redirect('')
 
 
 if __name__ == '__main__':
